@@ -1,0 +1,42 @@
+@import url(./componentes/componente_01.css);
+@import url(./componentes/componente_02.css);
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 500px) {
+    /*Componente 01*/
+    .main_content div:nth-child(1) {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .main_content div:nth-child(1) nav {
+        flex-direction: column;
+        width: 90%;
+        gap: 1rem;
+    }
+    .main_content div:nth-child(1) nav:nth-child(2) {
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+    .main_content div:nth-child(1) nav img {
+        width: 100%;
+    }
+    .main_content div:nth-child(1) nav div {
+        gap: 1rem;
+    }
+    .main_content div:nth-child(1) nav div h2 {
+        font-size: 1.8rem;
+    }
+    
+    /*Componente 02*/
+    .main_content div:nth-child(2) {
+        text-align: left;
+        padding: 2rem 5%;
+    }
+    .main_content div:nth-child(2) h2 {
+        font-size: 1.8rem;
+    }   
+}
